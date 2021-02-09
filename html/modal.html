@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModalUltrav</title>
+<!-- Modal 1 -->
+    <!-- bootstrap modal starts here for Log in-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(240,240,240);">
+                <div class="modal-header">
+                    <!-- <h3>LOGIN</h3> -->
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight:
+                 bold;">LOGIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Username or Email Address *</label> -->
+                            <input type="text" class="form-control" placeholder="Email" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Password *</label> -->
+                            <input type="password" class="form-control" placeholder="Password" id="recipient-name">
+                        </div>
+                    
+                        <button type="button" class="btn btn-warning" style="font-weight:bold;">SIGN IN </button>
+
+                        <!-- <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                 <!-- Forgot Password -->
+                 <!-- opens a forgot password modal -->
+                    <a href="#exampleModal4" data-toggle="modal" data-target="#exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a>
+                    <!-- <a href="#" data-toggle="modal" data-target="exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap Modal for Log in ends here  -->
+
+
+
+    <!-- Modal 2 -->
+    <!-- bootstrap 2 modal starts here for Sign Up-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">REGISTER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Full Name *</label> -->
+                            <input type="text" class="form-control" placeholder="Full Name" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label> -->
+                            <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Password *</label> -->
+                            <input type="password" class="form-control" placeholder="Password" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Confirm Password *</label> -->
+                            <input type="password" class="form-control" placeholder="Confirm Password" id="recipient-name">
+                        </div>
+                        <button type="button" class="btn btn-warning">SIGN UP</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">SUBMIT</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- bootstrap Modal Sign Up 2 ends here  -->
+
+
+   
+<!-- Modal 3 -->
+ <!-- bootstrap 3 for forgot password -->
+ <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Content -->
+            <div class="modal-header" tabindex="-1">
+                <div class="login">
+                    <h3>Log in <span> or </span> Create Account</h3>
+                </div>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- body -->
+            <div class="modal-body">   
+                <div class="createacc">
+                    <label style="font-weight:bold;">LOG IN WITH OTP</label>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Enter otp" id="otp">
+
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label> -->
+                            <input type="email" class="form-control" placeholder="Password" id="recipient-name">
+                        </div>
+                        <!-- <div class="inputnum">
+                            <input type="email" id="otpEmail" class="input-text" name="otpEmail" title="Enter Email" placeholder="Enter your registered email address"	aria-required="true" />
+                        </div> -->
+                        <button class="btn btn-outline-warning" type="submit">GET OTP</button>
+                    </form> 
+                
+                    <p class="mt-2" style="font-weight: bold;">LOG IN WITH PASSWORD</p>
+                    <form method="post" action="">
+                        <!-- <input type="hidden" name="checkOutLogin" value="YES"> -->
+                        <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+
+                        <div class="pswd mt-2">
+                            <input type="password" type="password" autocomplete="off" class="form-control"
+                            id="login_password" title="Password" placeholder="Enter Password" aria-required="true">
+                            <!-- <input name="login_password" type="password" autocomplete="off" class="password-text"
+                                id="login_password" title="Password" placeholder="  Enter password" aria-required="true" /> -->
+                            <!-- <a data-toggle="modal" data-target="#exampleModal3"><span id="red">Forgot?</span></a> -->
+                            <a data-toggle="modal" data-target="#exampleModal4" style="color: red; font-weight: bold;">Forgot Password?</a>
+                        </div>
+                      
+                        <!-- <div class="custom-control custom-checkbox check-left mt-2"> -->
+                            <div class="custom-control custom-checkbox mt-2 save_info">
+                                <input type="checkbox" style="color: #f3b229 !important;" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Keep me Logged in</label>
+                            </div>
+                            <!-- <input type="checkbox" class="custom-control-input" id="defaultIndeterminate3" checked>
+                            <label class="custom-control-label" for="defaultIndeterminate3">Keep me Logged in</label> -->
+                        <!-- </div> -->
+                        <button type="submit" class="btn btn-outline-warning mt-2">Submit</button>
+                    </form>	
+                    
+                    <p class="hr-line-social mt-2">or</p>
+                    
+                    <span class="question" style="color: black;"> Don't have an account?</span>
+                    <a data-toggle="modal" id="modid"
+                        data-dismiss="modal"
+                        data-target="#exampleModal2"> <span id="red">Create your account here</span></a>							
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bootstrap Modal for forgot password 3 ends here  -->
+
+
+
+
+<!-- Modal 4 for forgot Password -->
+    <!-- password reset -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: rgb(240, 240, 240)">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold;">RESET PASSWORD </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <!-- <div class="form-group">
+                            <label for="recipient-name" class="col-form-label" style="font-weight:bold;">Name *</label>
+                            <input type="text" class="form-control" placeholder="Enter your full name" id="recipient-name">
+                        </div> -->
+                        <div class="form-group">
+                            <!-- <label for="message-text" class="col-form-label" style="font-weight:bold;">Email *</label> -->
+                            <input type="email" class="form-control" placeholder="Email" id="recipient-name">
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label for="message-text" class="col-form-label" style="font-weight:bold;">Password *</label>
+                            <input type="password" placeholder="Enter Password" class="form-control" id="recipient-name">
+                        </div> -->
+                        <button type="button" class="btn btn-warning">SEND</button>
+                    </form> 
+                </div>
+
+                <div class="modal-footer">
+                    <p>Remember your password?<a href="#exampleModal1" data-toggle="modal" data-target="#exampleModal1" style="color: red;"> Login</a></p>
+                    <!-- <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">SUBMIT</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Password reset 4 ends here  -->
+
+
+</body>
+</html>
+
